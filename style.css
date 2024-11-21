@@ -1,0 +1,241 @@
+/* base styles */
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #141E30, #243B55);
+    color: white;
+    transition: all 0.3s ease;
+}
+
+header, section {
+    text-align: center;
+    padding: 2rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+.highlight{
+    color: #8425ff;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background: #8425ff;
+    color: #141E30;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #00b8a9;
+}
+
+/* skill section */
+#skills {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: linear-gradient(to bottom, #243B55, #141E30);
+    color: white;
+}
+
+#skills h2 {
+    font: 2.5rem;
+    color: #8425ff;
+    margin-bottom: 2rem;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.skill{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #1c2833;
+    padding: 1.5rem;
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, background 0.3s;
+}
+
+.skill i {
+    font-size: 3rem;
+    color: #8425ff;
+    margin-bottom: 1rem;
+}
+
+.skill p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.skill:hover {
+    transform: scale(1.1);
+    background: #243B55;
+}
+
+/* portfolio section */
+#portfolio {
+    padding: 4rem 1.5rem;
+    text-align: center;
+    background: linear-gradient(to bottom, #141E30, #243B55);
+    color: white;
+}
+
+#portfolio h2 {
+    font-size: 2.5rem;
+    color: #8425ff;
+    margin-bottom: 2rem;
+}
+
+.portfolio-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.portfolio-item {
+    background: #1c2833;
+    overflow: hidden;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: left;
+    max-width: 350px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.30);
+    box-shadow: 0 8px 16px rgb(255, 255, 255);
+}
+
+.portfolio-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.portfolio-content {
+    padding: 1rem;
+    color: white;
+}
+
+.portfolio-container p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+    color: #d1d5db;
+}
+
+.portfolio-content .btn{
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    background: #8425ff;
+    color: #141E30;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.portfolio-content .btn:hover {
+    background: #00b8a9;
+}
+
+/* contact section */
+#contact {
+    background: linear-gradient(to bottom, #243B55, #141E30);
+    padding: 3rem 1.5rem;
+    text-align: center;
+    border-radius: 10px;
+    margin: 2rem auto;
+    max-width: 600px;
+    color: white;
+}
+
+#contact h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    color: #8425ff;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#contact .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact input, 
+#contact textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #1c2833;
+    color: white;
+    outline: none;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+#contact input:focus, 
+#contact textarea:focus {
+    box-shadow: 0px 4px 8px rgb(255, 255, 255)
+}
+
+#contact button:hover{
+    background: #00b8a9;
+    transform: scale(1.05);
+}
+
+/* footer */
+footer {
+    background: #141E30;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin-bottom: 1rem;
+}
+
+footer .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+footer .social-icons a {
+    color: #8425ff;
+    font-size: 1.5rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+}
+
+footer .social-icons a:hover{
+    color: #4000b8;
+    transform: scale(1.2);
+}
